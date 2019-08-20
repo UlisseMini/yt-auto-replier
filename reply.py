@@ -7,7 +7,6 @@ import googleapiclient.errors
 
 api_service_name = "youtube"
 api_version = "v3"
-DEVELOPER_KEY = # Put your developer key here
 client_secrets_file = "auth.json"
 
 scopes = ["https://www.googleapis.com/auth/youtube.force-ssl"]

@@ -4,13 +4,13 @@ import json
 import googleapiclient.discovery
 import sys
 from iterencoder import IterEncoder
+import os
 
 api_service_name = "youtube"
 api_version = "v3"
-DEVELOPER_KEY = # Put your developer key here
 
 youtube = googleapiclient.discovery.build(
-    api_service_name, api_version, developerKey = DEVELOPER_KEY)
+    api_service_name, api_version, developerKey = os.environ['DEV_KEY'])
 
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
